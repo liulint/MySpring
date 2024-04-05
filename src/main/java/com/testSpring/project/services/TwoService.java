@@ -1,7 +1,6 @@
 package com.testSpring.project.services;
 
-import com.spring.annotation.Autowired;
-import com.spring.annotation.Qualifier;
+import com.spring.annotation.Component;
 import com.spring.annotation.Service;
 
 /**
@@ -13,10 +12,7 @@ import com.spring.annotation.Service;
  */
 @Service
 public class TwoService {
-    @Autowired
-    @Qualifier("wewefwef")
-    OneService oneServices;
     public void test(){
-        System.out.println("TwoService test"+oneServices);
+        System.out.println("TwoService test");
     }
 }
